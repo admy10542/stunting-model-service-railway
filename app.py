@@ -1,4 +1,4 @@
-# python -m flask run
+# python3 -m flask run
 from flask import Flask, jsonify, request, make_response
 
 import joblib
