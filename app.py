@@ -38,4 +38,5 @@ def berat():
   b = a.tolist()
 
   return make_response(jsonify({'data': b}), 200)
-app.run()
+# app.run()
+app.run(host='0.0.0.0', port=8080, use_reloader=False)
