@@ -1,5 +1,5 @@
 # python3 -m flask run
-from flask import Flask, jsonify, request, make_response
+from Flask import Flask, jsonify, request, make_response
 
 import joblib
 from sklearn.model_selection import train_test_split
