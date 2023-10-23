@@ -1,13 +1,20 @@
 # python3 -m flask run
+# python3 -m flask run --port 8000
 from flask import Flask, jsonify, request, make_response
 
 import joblib
 from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
+# import streamlit as st
+# import requests
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
+app.config["DEBUG"] = False
+
+@app.route('/', methods=['GET'])
+def index():
+  return make_response(jsonify({'data': 'success'}), 200)
 
 @app.route('/', methods=['POST'])
 def hello():
