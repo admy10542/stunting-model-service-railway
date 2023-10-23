@@ -17,7 +17,7 @@ def index():
   # return make_response(jsonify({'data': 'success'}), 200)
   return render_template('home.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/tb-u', methods=['POST'])
 def hello():
   data = request.get_json()
   umur = data['umur']
