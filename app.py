@@ -14,7 +14,8 @@ app.config["DEBUG"] = False
 
 @app.route('/', methods=['GET'])
 def index():
-  return make_response(jsonify({'data': 'success'}), 200)
+  # return make_response(jsonify({'data': 'success'}), 200)
+  return render_template('home.html')
 
 @app.route('/', methods=['POST'])
 def hello():
