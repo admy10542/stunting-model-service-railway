@@ -1,6 +1,6 @@
 # python3 -m flask run
 # python3 -m flask run --port 8000
-from flask import Flask, jsonify, request, make_response
+from flask import Flask, jsonify, request, make_response, render_template
 
 import joblib
 from sklearn.model_selection import train_test_split
@@ -47,4 +47,4 @@ def berat():
 
   return make_response(jsonify({'data': b}), 200)
 # app.run()
-app.run(host='0.0.0.0', port=8080, use_reloader=False)
+app.run(host='0.0.0.0', port=5000, use_reloader=False)
